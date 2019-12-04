@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg) no-repeat center center fixed;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App {
+  background-image: "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+  color: white;
+}
+
+.input {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  display:inline-block;
+  border:.2em solid aliceblue;
+  border-radius:2em;
+  margin: .3em;
+  box-sizing:border-box;
+  padding:0.35em 1.2em;
+
+}
+
+.title {
+  font-size: calc(30px +2vmin);
+  letter-spacing: 60px;
+  align-items: center;
+  justify-content:center;
+}
+.App-link {
+  color: #09d3ac;
+}
+.product {
+  border: 20px white;
+  font-size: 60px;
+}
+.product_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.product_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rosybrown;
+  font-size:calc(10px + 2vmin);
+}
+button {
+background-color: #282c34;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+button {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border: 0.2em solid aliceblue;
+  margin: .3em;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Arial';
+  font-weight:400;
+  color: aliceblue;
+  text-align:center;
+  transition: all .2s;
+}
