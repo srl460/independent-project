@@ -5,24 +5,45 @@ import './App.css';
 
 function App() {
   const [page, setPage] = useState("");
+  const [input, setInput] = useState("");
   
   function scanButton() {
     setPage("Scanned");
   }
+  
+  function inputBox(event) {
+    setInput(event.target.value);
+    console.log(input)
+  }
 
+  function submitButton() {
+    setPage("Input");
+  }
   return (
     <div className = "App">
       {page === "" && (
         <>
           <h1 className="title">ROUTE</h1>
           <button onClick={scanButton}>Scan QR Code</button>
+          <input type="text" name="Enter Product Brand Name" onChange={inputBox} placeholder="Product Brand Name"/>
+          <button onClick={submitButton}>SUBMIT</button>
         </>
       )}
       {page === "Scanned" && <ButtonPage />}
+      {page === "Input" && <InputPage i={input}/>}
     </div>
   );
 }
 
+function InputPage(props) {
+  let data = ['Barilla', 'Yoplait', 'Goya Chickpeas'];
+  let currentProduct = props.i;
+  return (
+    <div className="input_page">
+    <p>{props.i}</p>
+    </div>
+  )
+}
 function ButtonPage() {
   return (
   <div className="product_page">

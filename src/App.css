@@ -3,9 +3,6 @@
   background: url(https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg) no-repeat center center fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
 .App {
   background-image: "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg";
@@ -82,4 +79,23 @@ button {
   color: aliceblue;
   text-align:center;
   transition: all .2s;
+}
+/* teeny tiny screens */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 20px;
+  }
+  .button {
+  display:inline-block;
+  font-size: 10px;
+  padding:0.35em;
+  margin: .3em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Arial';
+  font-weight:100;
+  color: aliceblue;
+  text-align:center;
+  transition: all .2s;
+  }
 }
