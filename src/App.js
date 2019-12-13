@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import { whileStatement } from '@babel/types';
+/*import { whileStatement } from '@babel/types';*/
 
 
 function App() {
@@ -40,13 +40,11 @@ function App() {
 }
 
 function InputPage(props) {
-  let data = ['Barilla'];
-  let currentProduct = props.i; 
   return (
     <div class="page">
       <div className="input_page">
       <p class="props">{props.i}</p>
-      <img src="https://cdn.britannica.com/91/183591-050-34AC9668/World-Data-Locator-Map-Bangladesh.jpg" height="200"/>
+      <img src="https://cdn.britannica.com/91/183591-050-34AC9668/World-Data-Locator-Map-Bangladesh.jpg" height="200" alt="bangladesh map"/>
       <div class="input-text">
         <div>Origin Location: Dhaka, Bhutan</div>
         <div>This item traveled: 1963 miles</div>
